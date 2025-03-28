@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot: Startseite</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Chatbot</h1>
+    
+    <div class="chatdiv">
+        
+        <h3 style="text-align: center;">Wie kann ich ihnen weiterhelfen?</h3>
+        
+        <div class="conversation">
+
+        </div>
+
+        <div class="questionBarStyle" id="questionBar">
+            <input type="text" name="" id="prompt1text" class="sendQuestionText">
+            <input type="button" value="Absenden" class="sendQuestionButton" id="prompt1button">
+        </div>
+
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .chatdiv {
+        height: 500px;
+    }
+
+    .conversation {
+        height: 90%;
+        background-color: grey;
+    }
+
+    .questionBarStyle {
+        height: 10%;
+    }
+
+    .sendQuestionButton {
+        height: 80%;
+        border-radius: 10px;
+        border-width: 0px;
+    }
+
+    .sendQuestionText {
+        height: 80%;
+        background-color: white;
+        border-radius: 10px;
+    }
+</style>
