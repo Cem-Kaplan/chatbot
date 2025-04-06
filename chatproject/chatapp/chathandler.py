@@ -1,12 +1,18 @@
 """
-print("Was möchten sie wissen?\n")
+Die hauptlogik hinter dem chatbot.
+Der input wird durch den while-loop geschickt und gibt eine ausgabe aus.
+Am anfang benutzt man noch das terminal.
+"""
 
+# importiert das dictionary
+from dictionary_folder.conversations_all_languages import *
 
 while True:
-    prompt1 = input()
-        
-    if prompt1 == "Wie heißt du":
-            print("ich bin der chatbot! entwickelt von C. Kaplan")
-    elif prompt1 == "":
-        print("irgendwas schreiben")
-"""
+    # macht den input lowercase wegen Case-Sensitivity, spart code
+    prompt1 = input().lower()
+
+    # checkt nach möglichen treffern im dictionary
+    if prompt1 in QA_DIC:
+        print(QA_DIC[prompt1]) # hier printet es die antwort falls es gefunden wurde
+    else:
+        print("Ihre eingabe konnte nicht verstanden werden\nYour input couldn't be understood") # falls nicht, kommt das
